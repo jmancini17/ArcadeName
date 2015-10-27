@@ -64,7 +64,7 @@ Enemy.prototype.render = function() {
 
 var Player = function(x,y) {
 	Agent.call(x,y);
-	this.sprite = 'images/char-cat-girl.png';
+	this.sprite = 'images/char-boy.png';
 };
 
 Player.prototype = Object.create(Agent.prototype);
@@ -72,7 +72,7 @@ Player.prototype.constructor = Player;
 Player.prototype.render = function() {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
 };
-player.prototype.update = function() {
+Player.prototype.update = function() {
 	
 };
 
